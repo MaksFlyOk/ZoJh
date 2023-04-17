@@ -11,11 +11,11 @@
 
 body {
   background-color: #222222;
-  height: 200vh;
+  height: 500vh;
 }
 
 /* Header Style */
-header{
+header {
   position: fixed;
   width: 100%;
   margin: auto;
@@ -23,7 +23,7 @@ header{
   background-color: #222222;
   z-index: 999;
 }
-nav{
+nav {
   background-color: #222222;
   max-width: 70%;
   height: 80px;
@@ -33,22 +33,20 @@ nav{
   align-items: center;
   justify-content: space-between;
 }
-nav a{
+nav a {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 40px;
   color: white;
   margin: 0px;
   text-decoration: none;
-}
-.logo{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 173px;
   height: 50px;
-  align-items: center;
 }
+
 .search {
   background-color: #d9d9d9;
   width: 600px;
@@ -57,14 +55,13 @@ nav a{
   margin-top: 20px;
   margin-bottom: 20px;
   outline: none;
-
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 20px;
   color: rgba(#000000, 0.5);
   padding: 8px 0px 8px 20px;
 }
-.burger-acc{
+.burger-acc {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -83,8 +80,7 @@ nav a{
   width: 100%;
 }
 
-
-.headerPlug{
+.headerPlug {
   height: 80px;
 }
 
@@ -95,8 +91,9 @@ main {
 }
 
 /* Слайдер: */
-.slider{
-  width: 1296px;
+.slider {
+  max-width: 1296px;
+  /* width: 1296px; */
   height: 554px;
   margin: 60px auto 0px auto;
 }
@@ -107,7 +104,7 @@ main {
   border-radius: 43px;
   box-shadow: inset -35px -36px 30px rgba(0, 0, 0, 0.5);
 }
-.clickItem{
+.clickItem {
   position: relative;
   display: flex;
   width: 125px;
@@ -118,7 +115,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
 }
-.clickItem span{
+.clickItem span {
   font-size: 0;
   height: 10px;
   width: 10px;
@@ -132,7 +129,7 @@ main {
   margin-top: 60px;
 }
 
-.downWithHr{
+.downWithHr {
   position: relative;
   margin-top: 80px;
 }
@@ -149,7 +146,7 @@ main {
   margin: -20px auto 0px auto;
   z-index: 1;
 }
-.button-down:hover{
+.button-down:hover {
   background-color: darkred;
   color: white;
 }
@@ -158,4 +155,228 @@ main {
   width: 100%;
   z-index: -1;
 }
+.menu {
+  margin: 70px auto 0 auto;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: space-between;
+  max-width: 70%;
+  flex-wrap: wrap;
+  max-height: 600px;
+  height: 600px;
+}
+.menuText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: white;
+}
+.aText1 {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 416px;
+  height: 272px;
+  background-image: url(/images/menu/image1.png);
+}
+.aText2 {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 416px;
+  height: 272px;
+  background-image: url(/images/menu/image2.png);
+}
+.aText3 {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 416px;
+  height: 272px;
+  background-image: url(/images/menu/image3.png);
+}
+.aText4 {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 416px;
+  height: 272px;
+  background-image: url(/images/menu/image4.png);
+}
+.aText5 {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 416px;
+  height: 272px;
+  background-image: url(/images/menu/image5.png);
+}
+.aText6 {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 416px;
+  height: 272px;
+  background-image: url(/images/menu/image6.png);
+}
+.hr3 {
+  margin-top: 50px;
+  border: 1px solid darkred;
+  width: 100%;
+}
+.sponsors {
+  margin: 50px auto 0 auto;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #ffffff;
+  height: 200px;
+}
+.redBlock {
+  width: 196px;
+  height: 72px;
+  background-color: #bd0000;
+}
+/* animation */
 
+.containerForAnimation {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  max-width: 70%;
+  height: 470px;
+  margin: 50px auto 0px auto;
+  padding: 0;
+}
+.inner {
+  width: 600px;
+  height: 470px;
+  z-index: -1;
+}
+.another-right {
+  position: absolute;
+  width: 33.5px;
+  height: 67px;
+  transition: 0.5s;
+  margin-left: 985px;
+  margin-top: -280px;
+  z-index: -1;
+}
+.another-left {
+  position: absolute;
+  width: 33.5px;
+  height: 67px;
+  transition: 0.5s;
+  margin-left: 900px;
+  margin-top: -280px;
+  z-index: -1;
+}
+
+.h1-1 {
+  margin-top: 170px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+  transform: translateX(-40%);
+  transition: 0.5s;
+  color: white;
+}
+.h1-2 {
+  margin-top: 170px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+
+  transform: translateX(+40%);
+  transition: 0.5s;
+  color: white;
+}
+.element2 {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  height: 460px;
+  background-color: #bd0000;
+  margin-left: 800px;
+  margin-top: -460px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.element1 {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  height: 460px;
+  background-color: #bd0000;
+  margin-left: 350px;
+  margin-top: -470px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.left {
+  position: absolute;
+  width: 33.5px;
+  height: 67px;
+  transition: 0.5s;
+  margin-left: -560px;
+  margin-top: 180px;
+  transform: translate(-125%);
+  opacity: 2;
+}
+.right {
+  position: absolute;
+  width: 33.5px;
+  height: 67px;
+  transition: 0.5s;
+  opacity: 0;
+
+  margin-left: 900px;
+  margin-top: 180px;
+  transform: translate(-500%);
+}
+.element1:hover {
+  opacity: 1;
+}
+.element1:hover h1 {
+  opacity: 1;
+  transform: translate(0);
+}
+.element1:hover img {
+  opacity: 1;
+  transform: translate(0);
+}
+.inner:hover .another-right {
+  display: none;
+}
+.element2:hover {
+  opacity: 1;
+}
+.element2:hover h1 {
+  opacity: 1;
+  transform: translate(0);
+}
+.element2:hover img {
+  opacity: 1;
+  transform: translate(-500%);
+}
