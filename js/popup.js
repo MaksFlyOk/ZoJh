@@ -59,3 +59,30 @@ function clearDiff () {
     document.querySelector('.login').style.display = 'none'
     diffCont.style.display = 'flex'
 }
+
+let popupbgSearch = document.querySelector('.popup__bgSearch'); 
+let popupSearch = document.querySelector('.popupSearch'); 
+let buttonSearch = document.querySelector('.searchSVG')
+
+
+buttonSearch.onclick = () => {
+    popupbgSearch.classList.add('active'); 
+    popupSearch.classList.add('active');
+    document.querySelector('body').style.overflowY = 'hidden'
+    addPrevious()
+}
+
+document.addEventListener('click', (e) => { 
+    if(e.target === popupbgSearch) { 
+        popupbgSearch.classList.remove('active'); 
+        popupSearch.classList.remove('active'); 
+        document.querySelector('body').style.overflowY = 'scroll'
+        document.querySelector('.searchPast').style.display = 'none'
+    }
+});
+
+function addPrevious() {
+    document.querySelector('.searchPopup').onclick = () => {
+        document.querySelector('.searchPast').style.display = 'block'
+    }
+}

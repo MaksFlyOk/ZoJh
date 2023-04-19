@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="icon" href="/favicon/favicon.ico" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="favicon/favicon.ico" />
     <title>ZOЖ</title>
   </head>
   <body>
@@ -14,7 +14,10 @@
         <svg width="48" height="48" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <path class="closeBurger" fill-rule="evenodd" clip-rule="evenodd" d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z" fill="#111"></path>
         </svg>
-          <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia praesentium quisquam cupiditate commodi provident, voluptatibus rerum eum, minima vero, necessitatibus ullam rem libero nihil itaque repellat natus quasi ratione fugiat.</div>
+          <div>У нас конечно же должны быть
+            услуги, но я слишком ленив
+            для этого, завтра на пары, 
+            мне нужно поспать, время уже 1:32...</div>
       </div>
     </div> 
     <div class="popup__bgAcc"> 
@@ -39,21 +42,34 @@
         </div>
       </div>
     </div> 
+    <div class="popup__bgSearch"> 
+      <div class="popupSearch">
+        <input type="text" placeholder="Search" class="searchPopup" />
+        <ul class="searchPast">
+          <li>Example</li>
+          <li>Example</li>
+          <li>Example</li>
+          <li>Example</li>
+          <li>Example</li>
+        </ul>
+      </div>
+    </div> 
     <header>
       <nav>
         <a href="#top">
-          <img src="/images/logo.png" alt="logo" />
+          <img src="images/logo.svg" alt="logo" />
           <span>ZOЖ</span>
         </a>
         <input type="text" placeholder="Search" class="search" />
         <div class="burger-acc">
+          <img class="searchSVG" src="images/search.svg" alt="search">
           <div class="burgerButton">
             <div class="burger-line"></div>
             <div class="burger-line"></div>
             <div class="burger-line"></div>
           </div>
           <div class="accButton">
-            <img src="/images/acc.svg" alt="acc" />
+            <img src="images/acc.svg" alt="acc" />
           </div>
         </div>
       </nav>
@@ -63,19 +79,19 @@
       <div class="headerPlug" id="top"></div>
       <div class="slider">
         <div class="itemSlide">
-          <img src="/images/slider/slide1.png" />
+          <img src="images/slider/slide1.png" />
         </div>
         <div class="itemSlide">
-          <img src="/images/slider/slide2.png" />
+          <img src="images/slider/slide2.png" />
         </div>
         <div class="itemSlide">
-          <img src="/images/slider/slide3.gif" />
+          <img src="images/slider/slide3.gif" />
         </div>
         <div class="itemSlide">
-          <img src="/images/slider/slide4.png" />
+          <img src="images/slider/slide4.png" />
         </div>
         <div class="itemSlide">
-          <img src="/images/slider/slide5.png" />
+          <img src="images/slider/slide5.png" />
         </div>
         <div class="clickItem">
           <span class="item1">1</span>
@@ -85,7 +101,7 @@
           <span class="item5">5</span>
         </div>
       </div>
-      <img src="/images/nstu.gif" alt="gif" class="nstuMade" />
+      <img src="images/nstu.gif" alt="gif" class="nstuMade" />
       <div class="downWithHr">
         <hr class="hr2" />
         <div class="button-down">down</div>
@@ -144,29 +160,11 @@
       </div>
       <hr class="hr3" />
       <div class="containerForAni">
-        <div class="containerForImg">
-          <div class="inner">
-            <img src="/images/animation/Rectangle 49.png" alt="Man" />
-          </div>
-          <div class="inner">
-            <img src="/images/animation/Rectangle 50.png" alt="Man" />
-          </div>
-        </div>
-          <div class="element1">
-            <h1 class="h1-1">Я хочу тренировать</h1>
-            <img src="/images/animation/right.png" alt="right" class="right" />
-          </div>
-          <div class="element2">
-            <h1 class="h1-2">Я хочу тренироваться</h1>
-            <img src="/images/animation/left.png" alt="left" class="left" />
-          </div>
-          <img src="/images/animation/right.png" alt="right" class="another-right"/>
-          <img src="/images/animation/left.png" alt="left" class="another-left" />
       </div>
     </main>
 
-    <script src="/js/slider.js"></script>
-    <script src="/js/smothHref.js"></script>
-    <script src="/js/popup.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/smothHref.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
