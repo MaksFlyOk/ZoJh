@@ -9,6 +9,36 @@
     <title>ZOЖ</title>
   </head>
   <body>
+    <div class="popup__bgBurger"> 
+      <div class="popupBurger">
+        <svg width="48" height="48" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path class="closeBurger" fill-rule="evenodd" clip-rule="evenodd" d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z" fill="#111"></path>
+        </svg>
+          <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia praesentium quisquam cupiditate commodi provident, voluptatibus rerum eum, minima vero, necessitatibus ullam rem libero nihil itaque repellat natus quasi ratione fugiat.</div>
+      </div>
+    </div> 
+    <div class="popup__bgAcc"> 
+      <div class="popupAcc">
+        <div class="diff">
+          <button class="regButton">Register</button>
+          <button class="logButton">LogIn</button>
+        </div>
+        <div class="login">
+          <strong class="regStroke">Login</strong>
+          <strong>Email: </strong><input type="text" placeholder="example@example.ru" class="mail">
+          <strong>Password: </strong> <input type="password" placeholder="Password" class="pass">
+          <button class="log">Login</button>
+        </div>
+        <div class="register">
+          <strong class="regStroke">Register</strong>
+          <Strong>Name: </Strong><input type="text" placeholder="Name" class="name">
+          <strong>Email: </strong><input type="text" placeholder="example@example.ru" class="mail">
+          <strong>Password: </strong> <input type="password" placeholder="Password" class="pass">
+          <strong>Confirm password: </strong> <input type="password" placeholder="Password" class="pass2">
+          <button class="reg">Register</button>
+        </div>
+      </div>
+    </div> 
     <header>
       <nav>
         <a href="#top">
@@ -17,12 +47,12 @@
         </a>
         <input type="text" placeholder="Search" class="search" />
         <div class="burger-acc">
-          <div>
+          <div class="burgerButton">
             <div class="burger-line"></div>
             <div class="burger-line"></div>
             <div class="burger-line"></div>
           </div>
-          <div>
+          <div class="accButton">
             <img src="/images/acc.svg" alt="acc" />
           </div>
         </div>
@@ -113,31 +143,30 @@
         <div class="redBlock">NSTU</div>
       </div>
       <hr class="hr3" />
-      <div class="containerForAnimation">
-        <div class="inner">
-          <img src="/images/animation/Rectangle 49.png" alt="Man" />
+      <div class="containerForAni">
+        <div class="containerForImg">
+          <div class="inner">
+            <img src="/images/animation/Rectangle 49.png" alt="Man" />
+          </div>
+          <div class="inner">
+            <img src="/images/animation/Rectangle 50.png" alt="Man" />
+          </div>
         </div>
-        <div class="inner">
-          <img src="/images/animation/Rectangle 50.png" alt="Man" />
-        </div>
+          <div class="element1">
+            <h1 class="h1-1">Я хочу тренировать</h1>
+            <img src="/images/animation/right.png" alt="right" class="right" />
+          </div>
+          <div class="element2">
+            <h1 class="h1-2">Я хочу тренироваться</h1>
+            <img src="/images/animation/left.png" alt="left" class="left" />
+          </div>
+          <img src="/images/animation/right.png" alt="right" class="another-right"/>
+          <img src="/images/animation/left.png" alt="left" class="another-left" />
       </div>
-      <div class="element1">
-        <h1 class="h1-1">Я хочу тренировать</h1>
-        <img src="/images/animation/right.png" alt="right" class="right" />
-      </div>
-      <div class="element2">
-        <h1 class="h1-2">Я хочу тренироваться</h1>
-        <img src="/images/animation/left.png" alt="left" class="left" />
-      </div>
-      <img
-        src="/images/animation/right.png"
-        alt="right"
-        class="another-right"
-      />
-      <img src="/images/animation/left.png" alt="left" class="another-left" />
     </main>
 
     <script src="/js/slider.js"></script>
     <script src="/js/smothHref.js"></script>
+    <script src="/js/popup.js"></script>
   </body>
 </html>

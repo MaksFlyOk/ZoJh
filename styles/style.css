@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto+Mono:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 
 *,
 *:after,
@@ -21,7 +21,7 @@ header {
   margin: auto;
   padding: 0px;
   background-color: #222222;
-  z-index: 999;
+  z-index: 9;
 }
 nav {
   background-color: #222222;
@@ -68,12 +68,18 @@ nav a {
   width: 112px;
   height: 29px;
 }
+.burgerButton:hover{
+  cursor: pointer;
+}
 .burger-line {
   width: 40px;
   height: 0px;
   border: 2px solid white;
   border-radius: 1100px;
   margin: 10px;
+}
+.accButton:hover{
+  cursor: pointer;
 }
 .hrHeader {
   border: 1px solid darkred;
@@ -156,16 +162,14 @@ main {
   z-index: -1;
 }
 .menu {
-  margin: 70px auto 0 auto;
+  margin: 45px auto 0 auto;
   padding: 0px;
   display: flex;
   align-items: center;
   vertical-align: middle;
-  justify-content: space-between;
-  max-width: 70%;
+  justify-content: space-evenly;
+  max-width: 1297px;
   flex-wrap: wrap;
-  max-height: 600px;
-  height: 600px;
 }
 .menuText {
   font-family: "Montserrat";
@@ -176,6 +180,7 @@ main {
   color: white;
 }
 .aText1 {
+  margin-top: 25px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -185,6 +190,7 @@ main {
   background-image: url(/images/menu/image1.png);
 }
 .aText2 {
+  margin-top: 25px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -194,6 +200,7 @@ main {
   background-image: url(/images/menu/image2.png);
 }
 .aText3 {
+  margin-top: 25px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -203,6 +210,7 @@ main {
   background-image: url(/images/menu/image3.png);
 }
 .aText4 {
+  margin-top: 25px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -212,6 +220,7 @@ main {
   background-image: url(/images/menu/image4.png);
 }
 .aText5 {
+  margin-top: 25px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -221,6 +230,7 @@ main {
   background-image: url(/images/menu/image5.png);
 }
 .aText6 {
+  margin-top: 25px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -230,33 +240,34 @@ main {
   background-image: url(/images/menu/image6.png);
 }
 .hr3 {
+  position: relative;
   margin-top: 50px;
   border: 1px solid darkred;
   width: 100%;
 }
 .sponsors {
-  margin: 50px auto 0 auto;
+  margin: 25px auto 0 auto;
   flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 70%;
+  max-width: 1297px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;
   color: #ffffff;
-  height: 200px;
 }
 .redBlock {
+  margin-top: 25px;
   width: 196px;
   height: 72px;
   background-color: #bd0000;
 }
-/* animation */
 
-.containerForAnimation {
+/* animation */
+.containerForImg {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -379,4 +390,188 @@ main {
 .element2:hover img {
   opacity: 1;
   transform: translate(-500%);
+}
+
+.popup__bgBurger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  opacity: 0;
+}
+.popup__bgBurger.active {
+  pointer-events: all;
+  z-index: 11;
+  opacity: 1;
+}
+.popupBurger {
+  position: absolute;
+  top: calc(0% + 50vh);
+  right: calc(0% - 15vw);
+  transform: translate(0%, -50%);
+  background: #D9D9D9;
+  width: 30vw;
+  height: 100vh;
+  padding: 20px;
+  transition: 0.3s all;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+  z-index: 100;
+}
+.popupBurger.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+  z-index: 100;
+}
+.closeBurger:hover{
+  cursor: pointer;
+}
+
+.popup__bgAcc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  opacity: 0;
+}
+.popup__bgAcc.active {
+  pointer-events: all;
+  z-index: 1;
+  opacity: 1;
+}
+.popupAcc {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%) scale(0);
+  background: #D9D9D9;
+  border-radius: 50px;
+  width: 40vw;
+  height: 60vh;
+  padding: 20px;
+  transition: 0.3s all;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.diff{
+  display: flex;
+  flex-direction: column;
+}
+.diff button{
+  all: initial;
+  width: 20vw;
+  height: 10vh;
+  margin-bottom: 20px;
+  background-color: #bd0000;
+  color: #D9D9D9;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 150px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.diff button:hover{
+  color: #bd0000;
+  background-color: #222222;
+}
+.register, .login{
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 2rem;
+  font-weight: 300;
+
+}
+.register input{
+  all: initial;
+  width: 20vw;
+  height: 4vh;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: #222222;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  border-radius: 150px;
+  transition: all 0.5s;
+}
+.login input{
+  all: initial;
+  width: 20vw;
+  height: 4vh;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: #222222;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  border-radius: 150px;
+  transition: all 0.5s;
+}
+.register button{
+  all: initial;
+  width: 20vw;
+  height: 5vh;
+  margin-top: 20px;
+  background-color: #bd0000;
+  color: #D9D9D9;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 150px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.login button {
+  all: initial;
+  width: 20vw;
+  height: 5vh;
+  margin-top: 20px;
+  background-color: #bd0000;
+  color: #D9D9D9;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 150px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.register button:hover{
+  color: #bd0000;
+  background-color: #222222
+}
+.login button:hover{
+  color: #bd0000;
+  background-color: #222222
+}
+.regStroke{
+  margin-bottom: 3vh;
+  font-size: 3rem;
+  color: #bd0000;
+  font-weight: 700;
+}
+.popupAcc.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+  z-index: 100;
 }
