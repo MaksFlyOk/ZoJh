@@ -4,26 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="../styles/styleMain.css" />
+    <link rel="icon" href="../favicon/favicon.ico" />
     <title>ZOЖ</title>
   </head>
   <body>
     <div class="popup__bgBurger">
       <div class="popupBurger">
-        <svg
-          width="48"
-          height="48"
-          viewBox="0 0 16 16"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            class="closeBurger"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z"
-            fill="#111"
-          ></path>
+        <svg width="48" height="48" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path class="closeBurger" fill-rule="evenodd" clip-rule="evenodd" d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z" fill="#111"></path>
         </svg>
         <div>
           У нас конечно же должны быть услуги, но я слишком ленив для этого,
@@ -40,9 +29,9 @@
         <div class="login">
           <strong class="regStroke">Login</strong>
           <strong>Email: </strong
-          ><input type="text" placeholder="example@example.ru" class="mail" />
+          ><input type="text" placeholder="example@example.ru" class="mailLog" />
           <strong>Password: </strong>
-          <input type="password" placeholder="Password" class="pass" />
+          <input type="password" placeholder="Password" class="passLog" />
           <button class="log">Login</button>
         </div>
         <div class="register">
@@ -74,19 +63,19 @@
     <header>
       <nav>
         <a href="#top">
-          <img src="images/logo.svg" alt="logo" />
+          <img src="../images/logo.svg" alt="logo" />
           <span>ZOЖ</span>
         </a>
         <input type="text" placeholder="Search" class="search" />
         <div class="burger-acc">
-          <img class="searchSVG" src="images/search.svg" alt="search" />
+          <img class="searchSVG" src="../images/search.svg" alt="search" />
           <div class="burgerButton">
             <div class="burger-line"></div>
             <div class="burger-line"></div>
             <div class="burger-line"></div>
           </div>
           <div class="accButton">
-            <img src="images/acc.svg" alt="acc" />
+            <img src="../images/acc/acc.svg" class="accSVG" alt="acc" />
           </div>
         </div>
       </nav>
@@ -96,19 +85,19 @@
       <div class="headerPlug" id="top"></div>
       <div class="slider">
         <div class="itemSlide">
-          <img src="images/slider/slide1.png" />
+          <img src="../images/slider/slide1.png" />
         </div>
         <div class="itemSlide">
-          <img src="images/slider/slide2.png" />
+          <img src="../images/slider/slide2.png" />
         </div>
         <div class="itemSlide">
-          <img src="images/slider/slide3.gif" />
+          <img src="../images/slider/slide3.gif" />
         </div>
         <div class="itemSlide">
-          <img src="images/slider/slide4.png" />
+          <img src="../images/slider/slide4.png" />
         </div>
         <div class="itemSlide">
-          <img src="images/slider/slide5.png" />
+          <img src="../images/slider/slide5.png" />
         </div>
         <div class="clickItem">
           <span class="item1">1</span>
@@ -118,7 +107,7 @@
           <span class="item5">5</span>
         </div>
       </div>
-      <img src="images/nstu.gif" alt="gif" class="nstuMade" />
+      <img src="../images/nstu.gif" alt="gif" class="nstuMade" />
       <div class="downWithHr">
         <hr class="hr2" />
         <div class="button-down"><a href="#ani">Down</a></div>
@@ -181,13 +170,13 @@
         <div class="another-left-container">
           <div class="container-left">
             <img
-              src="images/animation/Man-left.png"
+              src="../images/animation/Man-left.png"
               alt="Photo"
               class="left-img"
             />
           </div>
           <img
-            src="images/animation/Arrow-right.png"
+            src="../images/animation/Arrow-right.png"
             alt="arrow"
             class="arrow-right"
           />
@@ -196,13 +185,13 @@
         <div class="another-right-container">
           <div class="container-right">
             <img
-              src="images/animation/Man-right.png"
+              src="../images/animation/Man-right.png"
               alt="Photo"
               class="right-img"
             />
           </div>
           <img
-            src="images/animation/Arrow-left.png"
+            src="../images/animation/Arrow-left.png"
             alt="arrow"
             class="arrow-left"
           />
@@ -243,13 +232,14 @@
         <br />
         однк
         </p></p></div>
-      <div class="mobile-devices"> <p><span>мобильные устройства</span></p> <br> <img src="images/App Store.png" alt="App Store"> <br> <img src="images/GooglePlay.png" alt="Google Play"></div>
+      <div class="mobile-devices"> <p><span>мобильные устройства</span></p> <br> <img src="../images/Store/App Store.png" alt="App Store"> <br> <img src="../images/Store/GooglePlay.png" alt="Google Play"></div>
       <div class="ZOJH-2022">
         ZOЖ <br> 2022
       </div>
     </footer>
-    <script src="js/slider.js"></script>
-    <script src="js/smothHref.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/LogReg.js"></script>
+    <script src="../js/smothHref.js"></script>
+    <script src="../js/popup.js"></script>
   </body>
 </html>

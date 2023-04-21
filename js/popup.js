@@ -21,12 +21,20 @@ let popupbgAcc = document.querySelector('.popup__bgAcc');
 let popupAcc = document.querySelector('.popupAcc'); 
 let accButton = document.querySelector('.accButton')
 let closeAcc = document.querySelector('.closeAcc')
+let personSettings = JSON.parse(localStorage.getItem('person'))
+
+
+
 
 accButton.onclick = () => {
-    popupbgAcc.classList.add('active'); 
-    popupAcc.classList.add('active');
-    document.querySelector('body').style.overflowY = 'hidden'
-    diff()
+    if (personSettings.loginStatus === true) {
+        window.location.href = '../pages/Acc page.html'
+    }else{
+        popupbgAcc.classList.add('active'); 
+        popupAcc.classList.add('active');
+        document.querySelector('body').style.overflowY = 'hidden'
+        diff()
+    }
 }
 
 document.addEventListener('click', (e) => { 
